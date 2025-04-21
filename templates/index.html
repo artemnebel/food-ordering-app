@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Place Your Order</title>
+</head>
+<body>
+  <h1>Restaurant Order Form</h1>
+  <form action="/submit_order" method="POST">
+    <label>Name:</label><br>
+    <input name="name" required><br><br>
+
+    <label>Email:</label><br>
+    <input name="email" type="email" required><br><br>
+
+    <label>Phone:</label><br>
+    <input name="phone" required><br><br>
+
+    <label>Pickup Time:</label><br>
+    <input name="pickup_time" type="time" required><br><br>
+
+    <label>Select Items:</label><br>
+    <input type="checkbox" name="item" value="Pizza"> Pizza<br>
+    <input type="checkbox" name="item" value="Burger"> Burger<br>
+    <input type="checkbox" name="item" value="Fries"> Fries<br>
+    <input type="checkbox" name="item" value="Salad"> Salad<br><br>
+
+    <button type="submit">Place Order</button>
+  </form>
+</body>
+</html>

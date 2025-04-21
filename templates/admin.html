@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Admin - Order List</title>
+</head>
+<body>
+  <h1>Admin: Current Orders</h1>
+  {% for order in orders %}
+    <div style="margin-bottom:20px; padding:10px; border:1px solid black;">
+      <strong>Name:</strong> {{ order.name }}<br>
+      <strong>Phone:</strong> {{ order.phone }}<br>
+      <strong>Email:</strong> {{ order.email }}<br>
+      <strong>Pickup Time:</strong> {{ order.pickup_time }}<br>
+      <strong>Items:</strong> {{ order.items | join(', ') }}<br>
+      <strong>Submitted At:</strong> {{ order.timestamp }}
+    </div>
+  {% endfor %}
+</body>
+</html>
